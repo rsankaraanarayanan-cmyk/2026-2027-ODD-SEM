@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Attendance Viewer</title>
+
+<style>
+body { font-family: Arial, sans-serif; padding: 15px; }
+h1 { text-align: left; }
+h1 {text-decoration: underline;}
+h2 { text-align: left; }
+label { font-weight: bold; }
+
+select {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.card {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.label { font-weight: bold; }
+.value { text-align: right; max-width: 220px; word-wrap: break-word; }
+
+.clickable {
+    color: #0066cc;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.status-eligible { color: green; font-weight: bold; }
+.status-not-eligible { color: red; font-weight: bold; }
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.date-list {
+    max-height: 200px;
+    overflow-y: auto;
+    line-height: 1.6;
+    text-align: left;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Subject Names: </h1>
+<h2>Database Management System - III Sem AIML A and AIML B  <br><br> Innovation Design Thinking - DIP CS III SEM <br></h2>
+<h2>Student Attendance</h2>
+
+<label>Select Your Class </label>
+<select id="sectionSelect" onchange="loadAttendanceFile()">
+    <option value="">-- Select --</option>
+    <option value="csea">III SEM AIML A </option>
+    <option value="cseb">III SEM AIML B</option>
+    <option value="3dipcs">III SEM DIP CS </option>
+    
+</select>
+
+<br><br>
+
+<label>Select Attendance Type</label>
+<select id="typeSelect" onchange="loadAttendanceFile()">
+    <option value="">-- Select --</option>
+    <option value="t">Theory</option>
+    <option value="p">Practical</option>
+</select>
+
+<br><br>
+
+<label>Select Enrollment Number</label>
+<select id="enrollmentSelect" onchange="filterAttendance()">
+    <option value="">-- Select --</option>
+</select>
+
+<div id="attendanceCard" class="card"></div>
+
+<!-- MODAL -->
+<div id="dateModal" class="modal">
+    <div class="modal-content">
+        <h3 id="modalTitle"></h3>
+        <div id="modalBody" class="date-list"></div>
+        <br>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<script>
+let attendanceData = [];
+
+/* ✅ ROBUST CSV PARSER */
+function parseCSVLine(line) {
+    let result = [];
+    let current = "";
+    let insideQuotes = false;
+
+    for (let i = 0; i < line.length; i++) {
+        const char = line[i];
+
+        if (char === '"') {
+            insideQuotes = !insideQuotes;
+        } else if (char === "," && !insideQuotes) {
+            result.push(current.trim());
+            current = "";
+        } else {
+            current += char;
+        }
+    }
+    result.push(current.trim());
+    return result;
+}
+
+function loadAttendanceFile() {
+    const section = sectionSelect.value;
+    const type = typeSelect.value;
+    if (!section || !type) return;
+
+    fetch(section + type + ".csv")
+        .then(res => res.text())
+        .then(data => {
+            attendanceData = [];
+            const rows = data.trim().split("\n");
+            rows.shift(); // remove header
+
+            rows.forEach(row => {
+                if (!row.trim()) return;
+
+                const cols = parseCSVLine(row);
+                if (cols.length < 9) return;
+
+                attendanceData.push({
+                    enroll: cols[0].replace(/"/g,"").trim(),
+                    name: cols[1].trim(),
+                    type: cols[2].trim(),
+                    tp: cols[3].trim(),
+                    tab: cols[4].trim(),
+                    per: cols[5].trim(),
+                    presentDates: cols[6].replace(/"/g,"").trim(),
+                    absentDates: cols[7].replace(/"/g,"").trim(),
+                    lastUpdated: cols[8].replace(/"/g,"").trim()
+                });
+            });
+
+            loadEnrollmentDropdown();
+        });
+}
+
+function loadEnrollmentDropdown() {
+    enrollmentSelect.innerHTML = '<option value="">-- Select --</option>';
+
+    [...new Set(attendanceData.map(a => a.enroll))].forEach(e => {
+        enrollmentSelect.innerHTML += `<option value="${e}">${e}</option>`;
+    });
+
+    attendanceCard.innerHTML = "";
+}
+
+function filterAttendance() {
+    const r = attendanceData.find(a => a.enroll === enrollmentSelect.value);
+    if (!r) return;
+
+    const percentage = parseFloat(r.per);
+    const statusText = percentage >= 75 ? "Eligible" : "Not Eligible";
+    const statusClass = percentage >= 75 ? "status-eligible" : "status-not-eligible";
+
+    attendanceCard.innerHTML = `
+        <div class="row"><div class="label">Enrollment No</div><div class="value">${r.enroll}</div></div>
+        <div class="row"><div class="label">Name</div><div class="value">${r.name}</div></div>
+        <div class="row"><div class="label">Type</div><div class="value">${r.type}</div></div>
+
+        <div class="row">
+            <div class="label">Total Present</div>
+            <div class="value clickable" onclick="showMessage('Present Dates','${r.presentDates}')">${r.tp}</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Total Absent</div>
+            <div class="value clickable" onclick="showMessage('Absent Dates','${r.absentDates}')">${r.tab}</div>
+        </div>
+
+        <div class="row"><div class="label">Percentage</div><div class="value">${percentage}%</div></div>
+        <div class="row"><div class="label">Status</div><div class="value ${statusClass}">${statusText}</div></div>
+        <div class="row"><div class="label">Attendance updated till</div><div class="value">${r.lastUpdated}</div></div>
+    `;
+}
+
+function showMessage(title, msg) {
+    modalTitle.innerText = title;
+    modalBody.innerHTML = msg
+        ? msg.split(",").map(d => "• " + d.trim()).join("<br>")
+        : "No data";
+    dateModal.style.display = "block";
+}
+
+function closeModal() {
+    dateModal.style.display = "none";
+}
+</script>
+
+</body>
+</html>
