@@ -1,48 +1,48 @@
 EnrollmentNo,Name,Type,Totalpresent,Totalab,Percentage,presentdates,absentdates,lastupdated
-2025ENGG0967,Gagan Vashisth,Practical,1,0,100,"""24.07.2026""","""""",24.07.2026
-2025ENGG1052,Hitesh,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0716,Hitesh Singh,Practical,1,0,100,"""24.07.2026""","""""",24.07.2026
-2025ENGG0765,Hridesh Barwal,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG1136,Hritik Kumar,Practical,1,0,100,"""24.07.2026""","""""",24.07.2026
-2025ENGG0812,Isha,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0953,Ishika,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0504,Ishit Jain,Practical,1,0,100,"""24.07.2026""","""""",24.07.2026
-2025ENGG0447,Jadhav Chandhan,Practical,1,0,100,"""24.07.2026""","""""",24.07.2026
-2025ENGG0496,Jaivardhan Raahi,Practical,1,0,100,"""24.07.2026""","""""",24.07.2026
-2025ENGG0312,Jatin,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0850,Jayesh Agarwal,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0783,Kadali Swetha Niharika,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG1015,Kadavakollu Nikhil,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0940,Kakara Abhisheikth Satwik,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0025,Kalash Srivastava,Practical,1,0,100,"""24.07.2026""","""""",24.07.2026
-2025ENGG0470,Kalavala Rithvik Reddy,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0544,Kamini Navya Sree,Practical,1,0,100,"""24.07.2026""","""""",24.07.2026
-2025ENGG0578,Kamolla Hemanth Kumar,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0837,Kanaveni Shivaram,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0876,Kanisetty Balaji,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0066,Kapeesh Mehadia,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0234,Karimendi Naga Padma Ramya Sri,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG1005,Katamsetty Venkata Kishore,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0914,Kayaan Jain,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0941,Kesari Jithender Reddy,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0382,Keshav Bhatnager,Practical,1,0,100,"""24.07.2026""","""""",24.07.2026
-2025ENGG0443,Khushbu Tak,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0583,Kollepara Sai Nivija,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0731,Komal Dilipsing Girase,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0584,Kommuru Lakshmi Saranya,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0575,Kommuru Narasimha Saran,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0784,Kotakonda Guruju Charan Sai,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0855,Kotha Varshith Reddy,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0473,Krishna Rathor,Practical,1,0,100,"""24.07.2026""","""""",24.07.2026
-2025ENGG0279,Krishna Tiwari,Practical,1,0,100,"""24.07.2026""","""""",24.07.2026
-2025ENGG0037,Kriti Kumari,Practical,1,0,100,"""24.07.2026""","""""",24.07.2026
-2025ENGG1156,Kumar Yatharth,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0293,Kunal,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0215,Kunsh Bansal,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0962,Kusum,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0125,Laher Rathi,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG0574,Lakkireddy Rakshith Reddy,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
-2025ENGG1135,Lakshya Sharma,Practical,0,1,0,"""""","""24.07.2026""",24.07.2026
+2025ENGG0967,Gagan Vashisth,Practical,2,0,100,"""24.07.2026,31.07.2026""","""""",24.07.2026
+2025ENGG1052,Hitesh,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0716,Hitesh Singh,Practical,2,0,100,"""24.07.2026,31.07.2026""","""""",24.07.2026
+2025ENGG0765,Hridesh Barwal,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG1136,Hritik Kumar,Practical,1,1,50,"""24.07.2026""","""31.07.2026""",24.07.2026
+2025ENGG0812,Isha,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0953,Ishika,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0504,Ishit Jain,Practical,1,1,50,"""24.07.2026""","""31.07.2026""",24.07.2026
+2025ENGG0447,Jadhav Chandhan,Practical,2,0,100,"""24.07.2026,31.07.2026""","""""",24.07.2026
+2025ENGG0496,Jaivardhan Raahi,Practical,1,1,50,"""24.07.2026""","""31.07.2026""",24.07.2026
+2025ENGG0312,Jatin,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0850,Jayesh Agarwal,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0783,Kadali Swetha Niharika,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG1015,Kadavakollu Nikhil,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0940,Kakara Abhisheikth Satwik,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0025,Kalash Srivastava,Practical,1,1,50,"""24.07.2026""","""31.07.2026""",24.07.2026
+2025ENGG0470,Kalavala Rithvik Reddy,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0544,Kamini Navya Sree,Practical,1,1,50,"""24.07.2026""","""31.07.2026""",24.07.2026
+2025ENGG0578,Kamolla Hemanth Kumar,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0837,Kanaveni Shivaram,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0876,Kanisetty Balaji,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0066,Kapeesh Mehadia,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0234,Karimendi Naga Padma Ramya Sri,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG1005,Katamsetty Venkata Kishore,Practical,1,1,50,"""31.07.2026""","""24.07.2026""",24.07.2026
+2025ENGG0914,Kayaan Jain,Practical,1,1,50,"""24.07.2026""","""31.07.2026""",24.07.2026
+2025ENGG0941,Kesari Jithender Reddy,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0382,Keshav Bhatnager,Practical,1,1,50,"""24.07.2026""","""31.07.2026""",24.07.2026
+2025ENGG0443,Khushbu Tak,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0583,Kollepara Sai Nivija,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0731,Komal Dilipsing Girase,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0584,Kommuru Lakshmi Saranya,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0575,Kommuru Narasimha Saran,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0784,Kotakonda Guruju Charan Sai,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0855,Kotha Varshith Reddy,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0473,Krishna Rathor,Practical,1,1,50,"""24.07.2026""","""31.07.2026""",24.07.2026
+2025ENGG0279,Krishna Tiwari,Practical,1,1,50,"""24.07.2026""","""31.07.2026""",24.07.2026
+2025ENGG0037,Kriti Kumari,Practical,1,1,50,"""24.07.2026""","""31.07.2026""",24.07.2026
+2025ENGG1156,Kumar Yatharth,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0293,Kunal,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0215,Kunsh Bansal,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0962,Kusum,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0125,Laher Rathi,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG0574,Lakkireddy Rakshith Reddy,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
+2025ENGG1135,Lakshya Sharma,Practical,0,2,0,"""""","""24.07.2026,31.07.2026""",24.07.2026
 2025ENGG0846,Bommisetty Uha Chandana,Practical,0,1,0,"""""","""22.07.2026""",24.07.2026
 2025ENGG0412,Leisha Agrawal,Practical,1,0,100,"""22.07.2026""","""""",24.07.2026
 2025ENGG0457,Macharla Bhanu Teja,Practical,0,1,0,"""""","""22.07.2026""",24.07.2026
