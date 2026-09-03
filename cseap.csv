@@ -10,7 +10,6 @@ EnrollmentNo,Name,Type,Totalpresent,Totalab,Percentage,presentdates,absentdates,
 2025ENGG0003,Aryan Kumar Singh,Practical,1,2,33.33333333,"""14-08-2026""","""07.08.2026,21-08-2026""",28.08.2026
 2025ENGG1079,Atluru Venkata Deekshith Reddy,Practical,3,0,100,"""07.08.2026,14-08-2026,21-08-2026""","""""",28.08.2026
 2025ENGG0302,Avantika Verma,Practical,1,2,33.33333333,"""14-08-2026""","""07.08.2026,21-08-2026""",28.08.2026
-,,Practical,0,1,0,"""""","""07.08.2026""",28.08.2026
 2025ENGG0342,Bindela Vikas Reddy,Practical,2,1,66.66666667,"""14-08-2026,21-08-2026""","""07.08.2026""",28.08.2026
 2025ENGG0846,Bommisetty Uha Chandana,Practical,1,2,33.33333333,"""21-08-2026""","""07.08.2026,14-08-2026""",28.08.2026
 2025ENGG0880,Boya Paramesh,Practical,3,0,100,"""07.08.2026,14-08-2026,21-08-2026""","""""",28.08.2026
